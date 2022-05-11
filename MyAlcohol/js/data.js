@@ -1,25 +1,89 @@
 const qnaList = [
   {
-    q: '이성 사이에 진정한 친구는 있다, 없다?',
+    q: '누가 술 사준다고 했을 때 당신의 반응은?',
     a: [
-      { type: [1, 2, 4, 9] },
-      { type: [0, 3, 6, 5, 10, 8] },
+      { answer: '나랑 결혼하자는 건가..? 콩닥콩닥', type: ['enfp', 'infp', 'enfj', 'infj', 'entp', 'intp', 'entj', 'intj'] },
+      { answer: '뭐 부탁할 거 있나?', type: ['esfp', 'isfp', 'esfj', 'isfj', 'estp', 'istp', 'estj', 'istj'] },
     ]
   },
   {
-    q: '좋아하는 사람이 생겨 연락하고자 한다 ',
+    q: '친구들과 술자리에서 안주 고르는 취향은?',
     a: [
-      { type: [0, 3, 2, 8] },
-      { type: [1, 6, 5, 10] },
+      { answer: '평소 먹던 거 먹자?', type: ['esfp', 'isfp', 'esfj', 'isfj', 'estp', 'istp', 'estj', 'istj'] },
+      { answer: '야! 이거 새로 나왔나봐!! 먹어보자먹어보자먹어보자!!!!!!', type: ['enfp', 'infp', 'enfj', 'infj', 'entp', 'intp', 'entj', 'intj'] },
     ]
   },
   {
-    q: '당신의 고백 스타일은?',
+    q: '당신에게 나온 파란 칵테일 한 잔, 이걸 보고 드는 생각은?',
     a: [
-      { type: [1, 3, 2, 10, 8] },
-      { type: [7, 9, 11] },
+      { answer: '파란색 되게 이쁘다! 맛있겠다!!', type: ['esfp', 'isfp', 'esfj', 'isfj', 'estp', 'istp', 'estj', 'istj'] },
+      { answer: '색이 꼭 바다를 퍼온 것 같네,, 달콤한 맛이 날까, 신 맛이 날까?', type: ['enfp', 'infp', 'enfj', 'infj', 'entp', 'intp', 'entj', 'intj'] },
     ]
   },
+  {
+    q: '술자리에서 친구가 본인의 지인을 부르면 안되냐고 했을 때 당신의 반응은?',
+    a: [
+      { answer: '새 친구를 사귈 수 있는 기회..! 너 무 조 아', type: ['enfp', 'enfj', 'esfp', 'esfj', 'entp', 'entj', 'estp', 'estj' ] },
+      { answer: '엥.. 모르는 사람을.. 갑자기 왜.. 나랑 노는 게 재미 없나? ㅠㅠ ', type: ['infp', 'infj', 'isfp', 'isfj', 'intp', 'intj', 'istp', 'istj' ] },
+    ]
+  },
+  {
+    q: '술을 먹다가 주문하려고 직원을 불렀는데 오지 않는다 이 때 당신은?',
+    a: [
+      { answer: '바쁜가보다.. 그냥 기다린다..', type: ['infp', 'infj', 'isfp', 'isfj', 'intp', 'intj', 'istp', 'istj' ] },
+      { answer: '저기요~ 하면서 크게 직원을 다시 한 번 부른다.', type: ['enfp', 'enfj', 'esfp', 'esfj', 'entp', 'entj', 'estp', 'estj']},
+    ]
+  },
+
+  {
+    q: '당신이 원하는 술자리는?',
+    a: [
+      { answer: '영화를 보며 혼자 마시는게 최고지!', type: ['infp', 'infj', 'isfp', 'isfj', 'intp', 'intj', 'istp', 'istj'] },
+      { answer: '여러 사람들과 어울려 시끌벅적하게 즐기는 술자리가 좋아!', type: ['enfp', 'enfj', 'esfp', 'esfj', 'entp', 'entj', 'estp', 'estj'] },
+    ]
+  },
+  {
+    q: '술을 마시며 당신에게 고민을 털어놓는 친구, 이때 당신의 반응은?',
+    a: [
+      { answer: '친구의 고민을 공감하고 이해하며 같이 화내준다.', type: ['enfp', 'infp', 'esfp', 'isfp', 'enfj', 'infj', 'esfj', 'isfj' ] },
+      { answer: '친구의 고민을 해결할 수 있도록 해결책을 제시한다.', type: ['entp', 'intp', 'estp', 'istp', 'entj', 'intj', 'estj', 'istj'] },
+    ]
+  },
+  {
+    q: '술자리에서 갑자기 친구가 돈을 빌려달라고 한다. 이때 당신은?',
+    a: [
+      { answer: '친구사이에 돈거래는 NO! 단호하게 안된다고 한다.', type: ['entp', 'intp', 'estp', 'istp', 'entj', 'intj', 'estj', 'istj'] },
+      { answer: '얼마 필요한지 물어보고 내가 빌려줄 수 있는 한에서 빌려준다.', type: ['enfp', 'infp', 'esfp', 'isfp', 'enfj', 'infj', 'esfj', 'isfj'  ] },
+    ]
+  },
+  {
+    q: '술 마신 다음날, 친구가 갑자기 배가 너무 아프다고 한다. 이때 당신의 반응은?',
+    a: [
+      { answer: '어떡해.. 많이 아파? 괜찮아?', type: ['enfp', 'infp', 'esfp', 'isfp', 'enfj', 'infj', 'esfj', 'isfj' ] },
+      { answer: '너 어제 너무 과음한거 아니야? 병원가봐', type: ['entp', 'intp', 'estp', 'istp', 'entj', 'intj', 'estj', 'istj'] },
+    ]
+  },
+  {
+    q: '친구와 술 약속을 잡을 때 당신은 어떻게 계획을 짜는 편?',
+    a: [
+      { answer: '미리 찾아보고 갈 술집을 예약한다.', type: ['enfj', 'infj', 'esfj', 'isfj', 'entj', 'intj', 'estj', 'istj'] },
+      { answer: '약속 시간만 지키면 되지! 만나서 마음에 드는 술집에 들어간다.', type: ['enfp', 'infp', 'esfp', 'isfp', 'entp', 'intp', 'estp', 'istp'] },
+    ]
+  },
+  {
+    q: '친구가 술마시러 우리집으로 갑자기 온다 했을 때 당신의 반응은?',
+    a: [
+      { answer: '우리집 더러운데 괜찮으면 와!!', type: ['enfp', 'infp', 'esfp', 'isfp', 'entp', 'intp', 'estp', 'istp'] },
+      { answer: '갑자기? 오늘 과제도 해야하고 바쁜데.. 약속 있는 척 해야겠다.', type: ['enfj', 'infj', 'esfj', 'isfj', 'entj', 'intj', 'estj', 'istj'] },
+    ]
+  },
+  {
+    q: '꼭 가고싶었던 핫플 술집을 가려고 하는데 웨이팅이 1시간 넘는다. 이 때 당신의 반응은?',
+    a: [
+      { answer: '아쉽지만 근처 다른 술집으로 간다.', type: ['enfp', 'infp', 'esfp', 'isfp', 'entp', 'intp', 'estp', 'istp' ] },
+      { answer: '혹시 더 빨리 순서가 올지도 몰라.. 기다려본다.', type: ['enfj', 'infj', 'esfj', 'isfj', 'entj', 'intj', 'estj', 'istj'] },
+    ]
+  }
 ]
 
 const infoList = [
