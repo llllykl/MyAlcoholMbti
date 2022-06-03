@@ -1,0 +1,77 @@
+#qna{
+    display: none;
+    background-image: url(../canvas/qnaPage.png); 
+    background-size: 800px ;
+    background-repeat : no-repeat;
+    background-position: center;
+    height: 100vh;
+    text-align: center;
+    border-radius: 5px;
+}
+
+/* 질문 박스 */
+.qBox{
+    position: absolute;
+    left:50%;
+    top: 31%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    border-radius: 20px;
+    font-size: 32px;
+    font-weight: bold;
+    width: 450px;
+}
+
+.answerList{
+    background-color: rgb(182, 182, 182);
+    border-radius: 5px;
+    /* 질문 하나당 한줄씩 */
+    display: block;
+    width: 550px;
+    border: 0px;
+    font-size: 20px;
+    box-shadow: 4px 4px rgb(0, 0, 0);
+}
+
+/* 질문 답안지 박스 */
+.answerBox{
+    position: absolute;
+    left:50%;
+    top: 72%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 70%
+}
+
+/* 마우스가 버튼 위에 있을 때와 클릭했을 때의 효과 */
+.answerList:hover, .answerListL:focus{
+    background-color: rgb(165, 225, 81);
+    color:whitesmoke;
+}
+
+.status{
+    height: 25px;
+    width: 68%;
+    background-color: #EEEEE8;
+    border: 3px solid black;
+    border-radius: 20px;
+    
+}
+
+.statusBar{
+    height: 100%;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#e6f0a3+0,d2e638+50,c3d825+51,dbf043+100;Green+Gloss+%232 */
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#b8dd80+0,a5e151+45,85dd00+100 */
+    background: #b8dd80; /* Old browsers */
+    background: -moz-linear-gradient(left,  #b8dd80 0%, #a5e151 45%, #85dd00 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left,  #b8dd80 0%,#a5e151 45%,#85dd00 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right,  #b8dd80 0%,#a5e151 45%,#85dd00 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b8dd80', endColorstr='#85dd00',GradientType=1 ); /* IE6-9 */
+    border-radius: 20px;
+}
+  
+.statusnum{
+    float: right;
+    font-size: 22px;
+    color: #EEEEE8;
+}
