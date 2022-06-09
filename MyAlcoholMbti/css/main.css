@@ -1,0 +1,119 @@
+
+/* 데스크탑 */
+@media (min-width: 1281px) {
+  #mainImg{
+      position: relative;
+      background-image: url(../canvas/startpage.png); 
+      background-size: 100% 100%;
+      background-repeat : no-repeat;
+      margin: 0 auto;
+
+      background-position: center;
+      height: 90vh;
+      width: 50vw;
+    }
+  }
+
+  /* 랩탑, 데스크탑 */
+  @media (min-width: 1025px) and (max-width: 1280px) {
+    #mainImg{
+      position: relative;
+      background-image: url(../canvas/startpage.png); 
+      background-size: 100% 100%;
+      background-repeat : no-repeat;
+      margin: 0 auto;
+
+      background-position: center;
+      height: 90vh;
+      width: 50vw;
+    }
+  }
+
+   /* 태블릿, 아이패드(세로) */
+   @media screen and (min-width: 768px) and (max-width: 1024px) {
+    #mainImg{
+      position: relative;
+      background-image: url(../canvas/startpage.png); 
+      background-size: 100% 100%;
+      background-repeat : no-repeat;
+      margin: 0 auto;
+
+      background-position: center;
+      height: 90vh;
+      width: 80vw;
+    }
+  }
+
+    /* 저해상도 태블릿, 모바일(가로) */
+    @media screen and (min-width: 481px) and (max-width: 767px) {
+      #mainImg{
+        position: relative;
+        background-image: url(../canvas/startpage.png); 
+        background-size: 100% 100%;
+        background-repeat : no-repeat;
+        margin: 0 auto;
+  
+        background-position: center;
+        height: 90vh;
+        width: 96vw;
+      }
+    }
+
+    /* 대부분의 스마트폰 모바일 기기(세로) */
+  @media screen and (min-width: 320px) and (max-width: 480px){
+    #mainImg{
+        position: relative;
+        background-image: url(../canvas/startpage.png); 
+        background-size: 100% 100%;
+        background-repeat : no-repeat;
+        margin: 0 auto;
+
+        background-position: center;
+        height: 90vh;
+        width: 95.5vw;
+      }
+    }
+
+.mainBtn {
+  position: relative;
+  transform: translate(-50%,-50%);
+
+  left: 50%;
+  top: 66%;
+
+  width: 20%;
+  height: 5%;
+
+  padding: 0;
+  margin: 0;
+  border: 0px;
+}
+
+.mainBtnImg {
+  position: absolute;
+  transform: translate(-50%,-50%);
+
+  left: 50%;
+  top: 60%;
+
+  width: 120%;
+  height: 150%;
+  padding: 0;
+  margin: 0;
+  border: 0px;
+
+}
+ 
+  /* .mainBtn{
+    position: absolute;
+    left: 50%;
+    top: 64%;
+    transform: translate(-50%, -50%);
+    padding: 0%;
+    border: 0px;
+  } */
+  
+  .p{
+    font-size: 20px;
+  }
+  

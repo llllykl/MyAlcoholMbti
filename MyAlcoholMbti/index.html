@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="1st2zo">
+    <meta name="keywords" content="술BTI">
+    <meta name="description" content="술BTI">
+
+    <!-- sns공유관련 기본 설정 -->
+    <meta property="og:url" content="https://alcoholmbti.netlify.app" />
+    <meta property="og:title" content="술BTI" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="canvas/share-image.PNG" />
+    <meta property="og:description" content="나의 술bti는?" />
+
+    <!--favicon-->
+    <link rel="shortcut icon" href="canvas/favicon.ico" />
+    <link rel="apple-touch-icon-procomposed" href="canvas/favicon.ico" />
+
+    <title>술BTI</title>
+    <script defer src = "./js/data.js" charset="UTF-8"></script>
+    <script defer src = "./js/start.js" charset="UTF-8"></script>
+    <script defer src = "./js/share.js" charset="UTF-8"></script>
+    <!-- Use Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel = "stylesheet" href="./css/main.css">
+    <link rel = "stylesheet" href="./css/default.css">
+    <link rel = "stylesheet" href="./css/qna.css">
+    <link rel = "stylesheet" href="./css/animation.css">
+    <link rel = "stylesheet" href="./css/result.css">
+    <!--kakao SDK-->
+    <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
+    <script>
+        Kakao.init('10904a676fac6ce7332733cb6455a6be');
+        Kakao.isInitialized();
+    </script>
+</head>
+
+<body>
+    <!-- 반응형 웹사이트 grid system 사용 -->
+    <div class="container">
+        <!-- 시작 페이지 -->
+        <section id = "main" class = "">
+        <div id = "mainImg" class = "mainImg my-5 col-7 col-lg-7 col-md-12 col-sm-12 mx-auto">
+            <button type="button" class="mainBtn mx-auto" onclick="js:begin()">
+                <img src="./canvas/startbutton.PNG" class="mainBtnImg col-8 col-lg-8 col-md-10 col-sm-12 mx-auto">
+            </button>
+        </div>
+        </section>
+
+        <section id = "qna" class="col-7 col-lg-7 col-md-12 col-sm-12 mx-auto">
+            <div class="status mx-auto mt-5 my-5">
+                <div class="statusBar"></div>
+                <div class="statusnum px-5">1/12</div>
+            </div>
+            <div class="qBoxWrapper my-5 mx-auto">
+                <div class = "qBox my-5 py-3 mx-auto">
+                </div>
+            </div>
+        </div>
+            <div class = "answerBox"></div>
+            </div>
+            <!-- start.js innerHtml 사용-->
+          
+        </section>
+           
+                <!-- 결과 페이지 -->
+                <section id = "result">
+                    <div class="resultName">
+                    </div>
+
+                    <div id="resultImg" class="my-3 col-5 col-lg-5 col-md-8 col-sm-12 mx-auto">             
+                    </div>
+
+                    <!-- 공유하기 버튼 -->
+                    <button type="button" class="kakao mt-1 mb-3 my-2 py-2 px-2 mx-auto"
+                     onclick="js:setShare()">공유하기</button>
+
+                </section>
+              
+    </div>
+</body>
+</html>

@@ -1,0 +1,251 @@
+
+/* 320px 이하부턴 모바일 지원 불가로 간주 */
+@media screen and (min-width: 1px) and (max-width: 319px) {
+    body {
+        display: none;
+    }
+}
+
+/* 대부분의 스마트폰 모바일 기기(세로) */
+@media screen and (min-width: 320px) and (max-width: 480px){
+    #qna{
+        position: relative;
+        display: none;
+        background-image: url(../canvas/qnaPage.png); 
+        background-size: 100% 100% ;
+        background-repeat : no-repeat;
+        margin: 0 auto;
+        background-position: center;
+        height: 90vh;
+        width: 90vw;
+        text-align: center;
+    }
+    div.qBoxWrapper {
+        position: relative;
+        width: 100%;
+        height: 0%;
+        padding-bottom: 75%;
+        transform: translate(2.5%, 15%);
+        overflow: hidden;
+        text-align: center;
+        font-size: 0.83rem;
+    }
+    div.answerBox {
+        position: relative;
+        text-align: center;
+        transform: translate(-100%, -180%);
+        left: 50%;
+        top: 60%;
+        font-size: 0.1px;
+    }
+    div.statusnum{
+        float: none;   
+        transform: translate(59%, -99%);
+        font-size: 12px;
+        color: #EEEEE8;
+    }
+  }
+
+  /* 저해상도 태블릿, 모바일(가로) */
+  @media screen and (min-width: 481px) and (max-width: 767px) {
+    #qna{
+        position: relative;
+        display: none;
+        background-image: url(../canvas/qnaPage.png); 
+        background-size: 100% 100% ;
+        background-repeat : no-repeat;
+        margin: 0 auto;
+        background-position: center;
+        height: 90vh;
+        width: 90vw;
+        text-align: center;
+    }
+    div.qBoxWrapper {
+        position: relative;
+        width: 100%;
+        height: 0%;
+        padding-bottom: 75%;
+        transform: translate(2%, 10%);
+        overflow: hidden;
+        text-align: center;
+        font-size: 1.2rem;
+    }
+    div.answerBox {
+        position: relative;
+        text-align: center;
+        transform: translate(-94%, -177%);
+        left: 50%;
+        top: 60%;
+        font-size: 0.6rem;
+    }
+    div.statusnum{
+        float: none;   
+        transform: translate(58%, -87%);
+        font-size: 16px;
+        color: #EEEEE8;
+    }
+  }
+
+  /* 태블릿, 아이패드(세로) */
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+    #qna{
+        position: relative;
+        display: none;
+        background-image: url(../canvas/qnaPage.png); 
+        background-size: 100% 100% ;
+        background-repeat : no-repeat;
+        margin: 0 auto;
+        background-position: center;
+        height: 90vh;
+        width: 80vw;
+        text-align: center;
+    }
+    div.qBoxWrapper {
+        position: relative;
+        width: 100%;
+        height: 0%;
+        padding-bottom: 75%;
+        transform: translate(1%, 18%);
+        overflow: hidden;
+        text-align: center;
+        font-size: 1.4rem;
+    }
+    div.answerBox {
+        position: relative;
+        text-align: center;
+        transform: translate(-100%, -180%);
+        left: 50%;
+        top: 60%;
+        font-size: 0.91rem;
+    }   
+  }
+
+  /* 랩탑, 데스크탑 */
+  @media (min-width: 1025px) and (max-width: 1280px) {
+    #qna{
+        position: relative;
+        display: none;
+        background-image: url(../canvas/qnaPage.png); 
+        background-size: 100% 100% ;
+        background-repeat : no-repeat;
+        margin: 0 auto;
+        background-position: center;
+        height: 90vh;
+        width: 60vw;
+        text-align: center;
+    }
+    div.qBoxWrapper {
+        position: relative;
+        width: 100%;
+        height: 0%;
+        padding-bottom: 75%;
+        transform: translate(1%, 4.5%);
+        overflow: hidden;
+        text-align: center;
+        font-size: 1.5rem;
+    }
+    div.answerBox {
+        position: relative;
+        text-align: center;
+        transform: translate(-100%, -180%);
+        left: 50%;
+        top: 60%;
+        font-size: 1.0rem;
+    }   
+}
+
+/* 데스크탑 */
+    @media (min-width: 1281px) {
+        #qna{
+            position: relative;
+            display: none;
+            background-image: url(../canvas/qnaPage.png); 
+            background-size: 100% 100% ;
+            background-repeat : no-repeat;
+            margin: 0 auto;
+            background-position: center;
+            height: 90vh;
+            width: 55vw;
+            text-align: center;
+        }
+        div.qBoxWrapper {
+            position: relative;
+            width: 100%;
+            height: 0%;
+            padding-bottom: 75%;
+            transform: translate(1%, 4.5%);
+            overflow: hidden;
+            text-align: center;
+            font-size: 1.688rem;
+        }
+        div.answerBox {
+            position: relative;
+            text-align: center;
+            transform: translate(-100%, -180%);
+            left: 50%;
+            top: 60%;
+            font-size: 1.1rem;
+        }
+    }
+
+/* 질문 박스 */
+.qBoxWrapper.qBox {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    font-weight: bold;
+}
+
+.answerList{
+    position: relative;
+    background-color: rgb(182, 182, 182);
+    border-radius: 5px;
+    left: 50%;
+    top: 63%;
+
+    width: 33vw;
+    height: 10vh;
+
+    /* 질문 하나당 한줄씩 */
+    display: block;
+    border: 0px;
+    box-shadow: 4px 4px rgb(0, 0, 0);
+} 
+
+
+
+/* 마우스가 버튼 위에 있을 때와 클릭했을 때의 효과 */
+.answerList:hover, .answerListL:focus{
+    background-color: rgb(165, 225, 81);
+    color:whitesmoke;
+}
+
+.status{
+    height: 25px;
+    width: 68%;
+    background-color: #EEEEE8;
+    border: 3px solid black;
+    border-radius: 20px;
+    
+}
+
+.statusBar{
+    height: 100%;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#e6f0a3+0,d2e638+50,c3d825+51,dbf043+100;Green+Gloss+%232 */
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#b8dd80+0,a5e151+45,85dd00+100 */
+    background: #b8dd80; /* Old browsers */
+    background: -moz-linear-gradient(left,  #b8dd80 0%, #a5e151 45%, #85dd00 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left,  #b8dd80 0%,#a5e151 45%,#85dd00 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right,  #b8dd80 0%,#a5e151 45%,#85dd00 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b8dd80', endColorstr='#85dd00',GradientType=1 ); /* IE6-9 */
+    border-radius: 20px;
+}
+  
+.statusnum{
+    float: none;   
+    transform: translate(57%, -80%);
+    font-size: 22px;
+    color: #EEEEE8;
+}

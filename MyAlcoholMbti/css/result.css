@@ -1,0 +1,52 @@
+
+#result {
+    position: relative;
+    display: none; 
+    background-size: 100% 100%;
+    background-repeat : no-repeat;
+    background-position: center;
+    height: 100vh;
+    width: 100vw;
+    text-align: center;
+    border-radius: 5px;
+    margin-bottom: 0;
+}
+
+#shareResult{
+    position: relative;
+    background-size: 800px ;
+    background-repeat : no-repeat;
+    background-position: center;
+    height: 100vh;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.kakao {
+    color: #3A1D1D;
+    background-color: #fEE500;
+    font-size: 20px;
+    border: 0px;
+    border-radius: 4px;
+    
+}
+
+.gohome {
+    color: #646464;
+    background-color: #A5E151;
+    font-size: 20px;
+    border: 0px;
+    border-radius: 4px;
+}
+
+/* 마우스가 버튼 위에 있을 때와 클릭했을 때의 효과 */
+.kakao:hover, .kakao:focus{
+    background-color: #3A1D1D;
+    color: #fEE500;
+}
+
+/* 마우스가 버튼 위에 있을 때와 클릭했을 때의 효과 */
+.gohome:hover, .gohome:focus{
+    background-color: #646464;
+    color: #A5E151;
+}
