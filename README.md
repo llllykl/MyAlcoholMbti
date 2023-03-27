@@ -1,4 +1,4 @@
-# MyAlcoholMbti 너무 잘했따
+# MyAlcoholMbti
 
 * Q&A 페이지에 응답 버튼 2개 삽입
 * 응답 버튼에 answer 삽입
